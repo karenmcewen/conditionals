@@ -102,7 +102,7 @@ namespace Conditionals
                 From 66 to 100: 'The Golden Years' 
             If the age of the person is less than 0 or more than 100 - it might be an alien - 
                 print: "This program is for humans".
-            */
+            
 
             Console.WriteLine("How old are you today?");
             int personsAge = int.Parse(Console.ReadLine());
@@ -149,6 +149,25 @@ namespace Conditionals
             {
                 Console.WriteLine("This program is only for humans.");
             }
+            */
+
+            //Example - write a console application that asks the user for a number
+            //tell whether the number is even or odd
+            //hint: use the modulus operator % which outputs the remainder of the division of two integers
+
+            Console.WriteLine("Pick a number, any number!");
+            int yourNumber = int.Parse(Console.ReadLine());
+            if (yourNumber % 2 > 0) //alternatively,  ==0 to is true if the number is even
+            {
+                Console.WriteLine("The number " +yourNumber + " is odd");
+            }
+            else
+            {
+                Console.WriteLine("Your number " + yourNumber + " is even!");
+            }
+
+            //fizzbuzz example - if divisible between by 5 print 'fizz', by 3 print 'buzz', 
+            //both 5 and 3 then print 'fizzbuzz'
         }
     }
 }
